@@ -1,0 +1,71 @@
+<br>
+<br>
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+        <div class="main-content">
+            <div class="card-header">
+                Resgistrate gratis
+            </div>
+            <div class="card-body" id="marcos">
+                <form (submit)="addUsuarios()">
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">🖊</span>
+                        <input type="text" class="form-control" placeholder="Nombre" name="f_name" required="required"
+                        [(ngModel)]="user.f_name">
+                    </div><br>
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">🖊</span>
+                        <input type="text" class="form-control" placeholder="Apellido" name="l_name" required="required" 
+                        [(ngModel)]="user.l_name">
+                    </div><br>
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">📨</span>
+                        <input type="email" class="form-control" placeholder="Correo electrónico" name="user_email" required="required" 
+                        [(ngModel)]="user.user_email">
+                    </div><br>
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">🔐</span>
+                        <input type="password" class="form-control" placeholder="Contraseña" name="user_pass" required="required" 
+                        [(ngModel)]="user.user_pass">
+                    </div><br>
+                    <div class="input-group">
+                        <span class="input-group-text">Selecciona tu país</span>
+                        <select class="form-control" name="user_country" required="required"
+                        [(ngModel)]="user.user_country">
+                            <option>Colombia</option>
+                            <option>Ecuador</option>
+                            <option>México</option>
+                            <option>España</option>
+                            <option>Agentina</option>
+                            <option>Chile</option>
+                            <option>Panamá</option>
+                            <option>Venezuela</option>
+                            <option>Brasil</option>
+                            <option>Uruguay</option>
+                            <option>Paraguay</option>
+                        </select>
+                    </div><br>
+                    <div class="input-group">
+                        <span class="input-group-text">Selecciona tu sexo</span>
+                        <select class="form-control input-md" name="user_gender" required="required"
+                        [(ngModel)]="user.user_gender">
+                            <option>Hombre</option>
+                            <option>Mujer</option>
+                            <option>Prefiero no decirlo</option>
+                        </select>
+                    </div><br>
+                    <div class="input-group">
+                        <span class="input-group-text">🎂</span>
+                        <input type="date" class="form-control input-md" placeholder="Fecha de nacimiento" name="user_birth" required="required"
+                        [(ngModel)]="user.user_birth">
+                    </div><br>
+                    <div id="centrado">
+                        <button id="signup" class="btn btn-info btn-lg">Regístrate</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div  class="col-sm-2"></div><br>
+</div>

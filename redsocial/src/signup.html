@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Red Social | Sign up</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="well">
+                <h1 id="centrado">Social Network</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="main-content">
+                <div class="header">
+                    <h3 id="centrado"><strong>Unete a Social Network</strong></h3>
+                </div>
+                <div class="l-part">
+                    <form action="" method="post">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <input type="text" class="form-control" placeholder="Nombre" name="first_name" required="required">
+                        </div><br>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <input type="text" class="form-control" placeholder="Apellido" name="last_name" required="required">
+                        </div><br>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                            <input type="password" class="form-control" placeholder="Contraseña" name="u_pass" required="required">
+                        </div><br>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input id="email" type="email" class="form-control" placeholder="Email" name="u_email" required="required">
+                        </div><br>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-chevron-dowm"></i></span>
+                            <select class="form-control" name="u_country" required="required">
+                                <option disable>Selecciona tu país</option>
+                                <option>Colombia</option>
+                                <option>Ecuador</option>
+                                <option>México</option>
+                                <option>España</option>
+                                <option>Agentina</option>
+                                <option>Chile</option>
+                                <option>Panamá</option>
+                                <option>Venezuela</option>
+                                <option>Brasil</option>
+                                <option>Uruguay</option>
+                                <option>Paraguay</option>
+                            </select>
+                        </div><br>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-chevron-dowm"></i></span>
+                            <select class="form-control input-md" name="u_gender" required="required">
+                                <option disable>Selecciona tu país</option>
+                                <option>Hombre</option>
+                                <option>Mujer</option>
+                                <option>Prefiero no decirlo</option>
+                            </select>
+                        </div><br>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                            <input type="date" class="form-control input-md" placeholder="Fecha de nacimiento" name="u_birthday" required="required">
+                        </div><br>
+                        <a style="text-decoration: none; float: right; color: #187fab;" 
+                        data-toggle="tooltip" title="Signin" href="signin.php">Ya tienes una cuenta?</a><br><br>
+                        <div id="centrado">
+                            <button id="signup" class="btn btn-info btn-lg" name="sign_up">Regístrate</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
